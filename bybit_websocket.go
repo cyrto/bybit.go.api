@@ -115,7 +115,7 @@ func (b *WebSocket) Connect(args []string) error {
 	go b.handleIncomingMessages()
 
 	b.ctx, b.cancel = context.WithCancel(context.Background())
-	Ping(b)
+	// Ping(b)
 
 	return b.sendSubscription(args)
 }
