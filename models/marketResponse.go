@@ -105,6 +105,7 @@ type PriceFilter struct {
 
 type LotSizeFilter struct {
 	MaxOrderQty         string `json:"maxOrderQty"`
+	MinNotionalValue    string `json:"minNotionalValue"`
 	MinOrderQty         string `json:"minOrderQty"`
 	QtyStep             string `json:"qtyStep"`
 	PostOnlyMaxOrderQty string `json:"postOnlyMaxOrderQty"`
